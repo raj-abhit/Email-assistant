@@ -1,4 +1,4 @@
-# AI Engineer Assessment - Email Generation Assistant (Groq)
+# AI Engineer Assessment - Email Generation Assistant
 
 This project implements a complete assessment submission for the Email Generation Assistant task using Groq LLMs and Python.
 
@@ -28,30 +28,30 @@ This project implements a complete assessment submission for the Email Generatio
 ```text
 .
 +-- data/
-¦   +-- scenarios.json
+Â¦   +-- scenarios.json
 +-- outputs/
 +-- deliverables/
-¦   +-- model_a_results.csv
-¦   +-- model_a_results.json
-¦   +-- model_b_results.csv
-¦   +-- model_b_results.json
-¦   +-- comparison_summary.csv
-¦   +-- comparison_summary.json
+Â¦   +-- model_a_results.csv
+Â¦   +-- model_a_results.json
+Â¦   +-- model_b_results.csv
+Â¦   +-- model_b_results.json
+Â¦   +-- comparison_summary.csv
+Â¦   +-- comparison_summary.json
 +-- reports/
-¦   +-- comparative_analysis.md
-¦   +-- generated_emails.md
-¦   +-- final_report.md
+Â¦   +-- comparative_analysis.md
+Â¦   +-- generated_emails.md
+Â¦   +-- final_report.md
 +-- src/
-¦   +-- compare_models.py
-¦   +-- config.py
-¦   +-- data_loader.py
-¦   +-- evaluate.py
-¦   +-- groq_service.py
-¦   +-- metrics.py
-¦   +-- prompts.py
-¦   +-- schemas.py
+Â¦   +-- compare_models.py
+Â¦   +-- config.py
+Â¦   +-- data_loader.py
+Â¦   +-- evaluate.py
+Â¦   +-- groq_service.py
+Â¦   +-- metrics.py
+Â¦   +-- prompts.py
+Â¦   +-- schemas.py
 +-- tests/
-¦   +-- test_metrics.py
+Â¦   +-- test_metrics.py
 +-- .env.example
 +-- requirements.txt
 +-- README.md
