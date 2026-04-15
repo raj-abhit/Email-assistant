@@ -1,0 +1,3 @@
+label,strategy,generation_model,judge_model,fact_coverage_score,tone_alignment_score,professional_quality_score,overall_score
+Candidate A,baseline,llama-3.1-8b-instant,llama-3.1-8b-instant,0.95,0.86,0.97,0.9267
+Candidate B,fewshot,llama-3.3-70b-versatile,llama-3.1-8b-instant,0.95,0.87,0.95,0.9233

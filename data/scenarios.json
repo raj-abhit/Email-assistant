@@ -1,0 +1,122 @@
+[
+  {
+    "id": "S01",
+    "intent": "Follow up after client discovery meeting",
+    "tone": "formal",
+    "key_facts": [
+      "Thank the client for their time on April 12",
+      "Summarize that they need a dashboard for weekly sales KPIs",
+      "Mention we will send a technical proposal by Friday",
+      "Request confirmation of preferred implementation start date"
+    ],
+    "reference_email": "Subject: Follow-Up and Next Steps from Our Discovery Meeting\n\nDear Ms. Carter,\n\nThank you for your time during our discovery meeting on April 12. We appreciated the opportunity to understand your goals in more detail.\n\nAs discussed, your team is looking for a dashboard that tracks weekly sales KPIs in a clear and actionable format. We are currently preparing a technical proposal and will share it with you by Friday.\n\nIn the meantime, could you please confirm your preferred implementation start date so we can align our delivery plan accordingly?\n\nSincerely,\nAlex"
+  },
+  {
+    "id": "S02",
+    "intent": "Request missing documents from a job applicant",
+    "tone": "empathetic",
+    "key_facts": [
+      "Application received for Data Analyst role",
+      "Portfolio and final semester transcript are missing",
+      "Deadline to submit missing items is April 20",
+      "Offer help if they face upload issues"
+    ],
+    "reference_email": "Subject: Quick Update on Your Data Analyst Application\n\nHi Priya,\n\nThank you for applying for the Data Analyst role. We are glad to see your interest in joining our team.\n\nWhile reviewing your submission, we noticed that your portfolio and final semester transcript were not included. If possible, please upload these documents by April 20 so we can proceed with the next stage.\n\nIf you experience any issues with the upload process, please let us know and we will be happy to help.\n\nBest regards,\nRecruitment Team"
+  },
+  {
+    "id": "S03",
+    "intent": "Escalate delayed vendor shipment",
+    "tone": "urgent",
+    "key_facts": [
+      "Purchase order PO-8742 is delayed by 9 days",
+      "Delay is impacting plant line 3",
+      "Need confirmed dispatch date within 24 hours",
+      "State that penalties apply per contract section 5.2"
+    ],
+    "reference_email": "Subject: Urgent: Dispatch Confirmation Required for PO-8742\n\nDear Vendor Operations Team,\n\nThis is an urgent escalation regarding purchase order PO-8742, which is now delayed by 9 days. The delay is directly impacting operations on plant line 3.\n\nPlease provide a confirmed dispatch date within the next 24 hours. As a reminder, penalties are applicable under contract section 5.2 for delivery delays.\n\nWe need your immediate response to avoid further operational disruption.\n\nRegards,\nSupply Chain Manager"
+  },
+  {
+    "id": "S04",
+    "intent": "Introduce a newly assigned account manager",
+    "tone": "casual",
+    "key_facts": [
+      "New account manager is Jordan Lee",
+      "Jordan has 6 years of SaaS customer success experience",
+      "Transition call proposed on Tuesday at 3 PM",
+      "Current support channels remain unchanged"
+    ],
+    "reference_email": "Subject: Meet Your New Account Manager\n\nHi Team,\n\nI wanted to share a quick update: Jordan Lee will be your new account manager moving forward. Jordan brings 6 years of SaaS customer success experience and will be a great partner for your team.\n\nCould we schedule a short transition call on Tuesday at 3 PM?\n\nEverything else stays the same for now, including your current support channels.\n\nThanks,\nNina"
+  },
+  {
+    "id": "S05",
+    "intent": "Request approval for cloud budget increase",
+    "tone": "formal",
+    "key_facts": [
+      "Current monthly cloud spend is 18000 USD",
+      "Projected spend is 23500 USD for next quarter",
+      "Increase driven by analytics workload expansion",
+      "Request approval by April 25 to avoid deployment delay"
+    ],
+    "reference_email": "Subject: Approval Request: Cloud Budget Adjustment for Next Quarter\n\nDear Finance Committee,\n\nI am writing to request approval for an increase in our cloud budget for the upcoming quarter. Our current monthly cloud spend is USD 18,000, and projections indicate an increase to USD 23,500.\n\nThis change is primarily due to the expansion of analytics workloads required for planned product initiatives. To avoid delays in deployment timelines, we kindly request your approval by April 25.\n\nPlease let me know if additional details are needed.\n\nKind regards,\nEngineering Operations"
+  },
+  {
+    "id": "S06",
+    "intent": "Apologize for support outage and share resolution",
+    "tone": "empathetic",
+    "key_facts": [
+      "Outage window was 10:05 AM to 10:47 AM IST",
+      "Root cause was a failed database failover",
+      "No customer data loss occurred",
+      "Add credit of 5 percent on next invoice"
+    ],
+    "reference_email": "Subject: Our Apology for This Morning's Service Outage\n\nDear Customer,\n\nWe sincerely apologize for the service outage that occurred today between 10:05 AM and 10:47 AM IST.\n\nOur investigation confirmed that the issue was caused by a failed database failover. We want to reassure you that no customer data was lost during this event.\n\nTo acknowledge the impact, we will apply a 5 percent credit to your next invoice.\n\nThank you for your patience and trust.\n\nWarm regards,\nCustomer Support"
+  },
+  {
+    "id": "S07",
+    "intent": "Invite stakeholders to quarterly roadmap review",
+    "tone": "formal",
+    "key_facts": [
+      "Meeting date is May 2",
+      "Time is 11:00 AM to 12:30 PM EST",
+      "Agenda includes Q3 milestones and staffing risks",
+      "Request RSVP by April 26"
+    ],
+    "reference_email": "Subject: Invitation: Quarterly Roadmap Review on May 2\n\nDear Stakeholders,\n\nYou are invited to the quarterly roadmap review scheduled for May 2 from 11:00 AM to 12:30 PM EST.\n\nThe agenda will cover Q3 milestones and current staffing risks that may impact delivery.\n\nPlease RSVP by April 26 so we can finalize participation and logistics.\n\nBest regards,\nProgram Management Office"
+  },
+  {
+    "id": "S08",
+    "intent": "Nudge a customer for overdue invoice payment",
+    "tone": "urgent",
+    "key_facts": [
+      "Invoice INV-3321 is overdue by 14 days",
+      "Outstanding amount is 4200 USD",
+      "Payment link was included in original invoice email",
+      "Ask for payment confirmation today"
+    ],
+    "reference_email": "Subject: Urgent Payment Reminder: Invoice INV-3321\n\nDear Mr. Gomez,\n\nThis is a reminder that invoice INV-3321 is now overdue by 14 days, with an outstanding balance of USD 4,200.\n\nFor convenience, the payment link was already included in the original invoice email. Please complete the payment and share confirmation today.\n\nIf payment has already been made, kindly send the transaction details so we can update our records.\n\nRegards,\nAccounts Receivable"
+  },
+  {
+    "id": "S09",
+    "intent": "Ask professor for deadline extension",
+    "tone": "formal",
+    "key_facts": [
+      "Assignment is Research Methods paper",
+      "Current deadline is April 18",
+      "Student had a medical emergency on April 14",
+      "Request extension until April 22"
+    ],
+    "reference_email": "Subject: Request for Extension on Research Methods Paper\n\nDear Professor Allen,\n\nI hope you are doing well. I am writing to request an extension for the Research Methods paper, which is currently due on April 18.\n\nI experienced a medical emergency on April 14 and have not been able to complete the assignment to the expected standard. I respectfully request an extension until April 22.\n\nThank you for your understanding and consideration.\n\nSincerely,\nRavi"
+  },
+  {
+    "id": "S10",
+    "intent": "Confirm workshop logistics to participants",
+    "tone": "casual",
+    "key_facts": [
+      "Workshop starts at 9:30 AM on Monday",
+      "Venue is Orion Hall, 2nd Floor",
+      "Bring laptop and company ID",
+      "Breakfast and coffee available from 9:00 AM"
+    ],
+    "reference_email": "Subject: Monday Workshop Logistics\n\nHi everyone,\n\nQuick confirmation for Monday: the workshop starts at 9:30 AM at Orion Hall on the 2nd Floor.\n\nPlease bring your laptop and company ID for check-in. Breakfast and coffee will be available from 9:00 AM.\n\nLooking forward to seeing you there.\n\nThanks,\nLearning Team"
+  }
+]

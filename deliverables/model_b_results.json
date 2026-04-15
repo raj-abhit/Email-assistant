@@ -1,0 +1,148 @@
+{
+  "strategy": "fewshot",
+  "generation_model": "llama-3.3-70b-versatile",
+  "judge_model": "llama-3.1-8b-instant",
+  "metric_definitions": {
+    "fact_coverage_score": "Deterministic metric (0-1): proportion of required facts recovered in generated email using token overlap + fuzzy similarity thresholds.",
+    "tone_alignment_score": "LLM-as-a-judge metric (0-1): measures whether generated email tone matches requested tone (formal/casual/urgent/empathetic).",
+    "professional_quality_score": "Hybrid metric (0-1): weighted combination of deterministic format checks and LLM-judge rating for clarity, grammar, and conciseness."
+  },
+  "average_scores": {
+    "fact_coverage_score": 0.95,
+    "tone_alignment_score": 0.87,
+    "professional_quality_score": 0.95,
+    "overall_score": 0.9233
+  },
+  "cases": [
+    {
+      "scenario_id": "S01",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 1.0,
+      "tone_alignment_score": 0.9,
+      "professional_quality_score": 0.97,
+      "overall_score": 0.9567,
+      "generated_email": "Subject: Next Steps After Discovery Meeting on April 12\n\nDear Client,\n\nI wanted to express my gratitude for taking the time to meet with us on April 12. We appreciated the opportunity to discuss your requirements and understand your needs. As summarized from our conversation, you are looking to develop a dashboard that will provide weekly sales KPIs to enhance your business insights.\n\nWe are currently working on a technical proposal that outlines our approach and solution to meet your requirements. You can expect to receive this proposal by this Friday. In preparation for a potential implementation, could you please confirm your preferred start date?\n\nWe look forward to the possibility of working with you and exploring how we can support your business goals.\n\nBest regards,\n[Your Name]",
+      "tone_feedback": "The tone is generally formal, but some phrases like 'We look forward to the possibility of working with you' could be more direct and professional.",
+      "quality_feedback": "The email is well-structured, clear, and concise. However, some sentences could be rephrased for better flow and grammar."
+    },
+    {
+      "scenario_id": "S02",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 0.75,
+      "tone_alignment_score": 0.8,
+      "professional_quality_score": 0.97,
+      "overall_score": 0.84,
+      "generated_email": "Subject: Request for Additional Documents for Data Analyst Application\n\nDear Applicant,\n\nI hope this email finds you well. We appreciate the interest you've shown in the Data Analyst role and thank you for submitting your application. As we review your materials, we noticed that your portfolio and final semester transcript are missing.\n\nTo move forward with your application, could you please submit these documents by April 20? If you're experiencing any issues with uploading them, please don't hesitate to reach out to us for assistance.\n\nWe're looking forward to receiving the missing items and appreciate your prompt attention to this matter.\n\nBest regards,\nHiring Team",
+      "tone_feedback": "The tone is generally empathetic, but could be more personalized to show genuine interest in the applicant's qualifications.",
+      "quality_feedback": "The email is well-structured, clear, and concise. However, it would benefit from a more formal closing sentence, such as 'We look forward to reviewing your complete application'."
+    },
+    {
+      "scenario_id": "S03",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 1.0,
+      "tone_alignment_score": 0.9,
+      "professional_quality_score": 0.97,
+      "overall_score": 0.9567,
+      "generated_email": "Subject: Urgent: Delayed Shipment PO-8742 - Immediate Attention Required\n\nDear Vendor Team,\n\nWe are writing to bring to your immediate attention the delayed shipment of Purchase Order PO-8742, which is now 9 days overdue. This delay is significantly impacting our plant line 3 operations and requires prompt resolution.\n\nWe urge you to provide a confirmed dispatch date within the next 24 hours. As per our contract, section 5.2, penalties will apply for any further delays. It is essential that we receive an updated shipment schedule to mitigate any additional disruptions.\n\nWe appreciate your prompt attention to this matter and look forward to hearing from you soon.\n\nSincerely,\nProcurement Department",
+      "tone_feedback": "The tone is mostly urgent and professional, but the closing sentence 'We appreciate your prompt attention to this matter and look forward to hearing from you soon' slightly softens the tone. Consider a more direct closing to maintain the urgency.",
+      "quality_feedback": "The email is well-structured, clear, and concise. However, consider adding more specific details about the impact of the delay on plant line 3 operations to provide context. Additionally, ensure that the penalties mentioned in the contract are clearly stated to avoid any confusion."
+    },
+    {
+      "scenario_id": "S04",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 1.0,
+      "tone_alignment_score": 0.9,
+      "professional_quality_score": 0.97,
+      "overall_score": 0.9567,
+      "generated_email": "Subject: Meet Your New Account Manager, Jordan Lee\n\nHi there,\n\nWe're excited to introduce Jordan Lee as your newly assigned account manager. With 6 years of experience in SaaS customer success, Jordan is well-equipped to support your needs and help you get the most out of our platform.\n\nTo ensure a smooth transition, we'd like to schedule a call with Jordan on Tuesday at 3 PM. This will be a great opportunity to discuss your current projects and objectives. Please note that our current support channels remain unchanged, so you can still reach out to us as you normally would.\n\nLooking forward to the call on Tuesday.\n\nBest,\nThe Team",
+      "tone_feedback": "The tone is mostly casual, but the language used is still somewhat formal. Consider using more colloquial expressions to better match the required tone.",
+      "quality_feedback": "The email is well-structured and easy to understand. However, some sentences could be rephrased for better conciseness. Additionally, consider adding a brief introduction to explain the purpose of the email and the importance of the transition call."
+    },
+    {
+      "scenario_id": "S05",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 1.0,
+      "tone_alignment_score": 0.9,
+      "professional_quality_score": 0.97,
+      "overall_score": 0.9567,
+      "generated_email": "Subject: Request for Cloud Budget Increase Approval\n\nDear Finance Team,\n\nI am writing to request approval for an increase in our cloud budget. Our current monthly cloud spend is $18,000 USD, but due to the expansion of our analytics workload, we are projecting a spend of $23,500 USD for the next quarter.\n\nThis increase is necessary to support the growth of our analytics capabilities and avoid any potential deployment delays. To ensure a smooth transition, we kindly request that you approve this budget increase by April 25.\n\nThank you for your prompt attention to this matter.\n\nBest regards,\n[Your Name]",
+      "tone_feedback": "The tone is generally formal, but some phrases like 'kindly request' could be more formal.",
+      "quality_feedback": "The email is well-structured, clear, and concise. However, it would benefit from more specific details about the analytics workload expansion and its impact on the budget."
+    },
+    {
+      "scenario_id": "S06",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 1.0,
+      "tone_alignment_score": 0.9,
+      "professional_quality_score": 0.97,
+      "overall_score": 0.9567,
+      "generated_email": "Subject: Apology and Resolution for Recent Support Outage\n\nDear Valued Customer,\n\nWe want to start by apologizing for the recent support outage that occurred between 10:05 AM and 10:47 AM IST. We understand the inconvenience this may have caused and appreciate your patience as we worked to resolve the issue. Our investigation revealed that a failed database failover was the root cause of the outage. Thankfully, our systems ensured that no customer data was lost during this time.\n\nAs a gesture of goodwill and commitment to making things right, we will be adding a 5 percent credit to your next invoice. If you have any questions or concerns, please don't hesitate to reach out to us.\n\nThank you for your understanding, and we look forward to continuing to provide you with the high level of service you expect from us.\n\nSincerely,\nCustomer Support Team",
+      "tone_feedback": "The tone is generally empathetic, but could be more sincere in its apology. The language used is polite and courteous, which aligns well with the required tone.",
+      "quality_feedback": "The email is well-structured, clear, and concise. Grammar and punctuation are correct. However, some sentences could be rephrased for better flow and clarity."
+    },
+    {
+      "scenario_id": "S07",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 0.75,
+      "tone_alignment_score": 0.9,
+      "professional_quality_score": 0.87,
+      "overall_score": 0.84,
+      "generated_email": "Subject: Invitation to Quarterly Roadmap Review on May 2\n\nDear Stakeholders,\n\nYou are cordially invited to our quarterly roadmap review, scheduled for May 2 from 11:00 AM to 12:30 PM EST. The agenda will include a review of Q3 milestones and a discussion on potential staffing risks.\n\nYour participation and input are valuable to us, and we kindly request that you RSVP by April 26 to confirm your attendance.\n\nWe look forward to your participation and feedback.\n\nBest regards,\n[Your Name]",
+      "tone_feedback": "The tone is generally formal, but the phrase 'cordially invited' and 'we look forward to your participation and feedback' slightly deviate from a strictly formal tone.",
+      "quality_feedback": "The email is well-structured, clear, and concise. However, it would benefit from a more direct statement of the meeting's purpose and a clearer call to action for RSVP."
+    },
+    {
+      "scenario_id": "S08",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 1.0,
+      "tone_alignment_score": 0.8,
+      "professional_quality_score": 0.97,
+      "overall_score": 0.9233,
+      "generated_email": "Subject: Overdue Payment: INV-3321 - Immediate Attention Required\n\nDear Valued Customer,\n\nWe are writing to bring to your attention that invoice INV-3321 is now 14 days overdue. The outstanding amount of $4200 USD is urgently required to settle your account. As a reminder, a payment link was included in the original invoice email for your convenience.\n\nTo avoid any further action, we kindly request that you settle this amount today and confirm the payment by return email. Your prompt attention to this matter is greatly appreciated.\n\nSincerely,\nAccounts Team",
+      "tone_feedback": "The tone is mostly urgent, but the language used is polite and courteous, which may not fully align with the required tone. Consider using more direct and assertive language to emphasize the urgency.",
+      "quality_feedback": "The email is well-structured, clear, and concise. However, the sentence 'To avoid any further action' may be perceived as threatening. Consider rephrasing it to focus on the benefits of prompt payment."
+    },
+    {
+      "scenario_id": "S09",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 1.0,
+      "tone_alignment_score": 0.9,
+      "professional_quality_score": 0.97,
+      "overall_score": 0.9567,
+      "generated_email": "Subject: Request for Deadline Extension for Research Methods Paper\n\nDear Professor,\n\nI am writing to request a deadline extension for the Research Methods paper, which is currently due on April 18. Due to a medical emergency that I experienced on April 14, I require additional time to complete the assignment to the best of my abilities.\n\nI am kindly requesting an extension until April 22, which would enable me to complete the paper without compromising its quality. I appreciate your understanding in this matter and am available to discuss this further if needed.\n\nThank you for your consideration.\n\nSincerely,\n[Your Name]",
+      "tone_feedback": "The tone is generally formal, but the phrase 'I appreciate your understanding in this matter' slightly deviates from a purely formal tone. It is still professional and polite, but could be more concise.",
+      "quality_feedback": "The email is well-structured, clear, and concise. Grammar and punctuation are correct. The use of transitional phrases and sentence structure is effective. However, the sentence 'I am available to discuss this further if needed' could be removed for brevity."
+    },
+    {
+      "scenario_id": "S10",
+      "strategy": "fewshot",
+      "generation_model": "llama-3.3-70b-versatile",
+      "judge_model": "llama-3.1-8b-instant",
+      "fact_coverage_score": 1.0,
+      "tone_alignment_score": 0.8,
+      "professional_quality_score": 0.87,
+      "overall_score": 0.89,
+      "generated_email": "Subject: Get Ready for Monday's Workshop\n\nHi Everyone,\n\nHope you're all set for our workshop on Monday. Just a few logistics to confirm: we'll be starting at 9:30 AM at Orion Hall, 2nd Floor. Please bring your laptop and company ID with you.\n\nTo get us fueled up for the day, breakfast and coffee will be available from 9:00 AM. We're looking forward to seeing you all there.\n\nBest,\nThe Team",
+      "tone_feedback": "The tone is mostly casual, but the phrase 'Best, The Team' could be more informal to fully match the required tone.",
+      "quality_feedback": "The email is well-structured, clear, and concise. However, it would be beneficial to include the required fact 'Breakfast and coffee available from 9:00 AM' in the main body of the email instead of mentioning it as a separate point."
+    }
+  ]
+}
